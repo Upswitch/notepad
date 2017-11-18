@@ -8,7 +8,7 @@ class Memo < Post
     line = nil
 
     while line != "end" do
-      line = STDIN.gets.chomp
+      line = STDIN.gets.chomp.encode('UTF-8')
       @text << line
     end
 

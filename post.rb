@@ -5,7 +5,7 @@ class Post
   @@SQLITE_DB_File = 'notepad.sqlite'
 
   def self.post_types
-    {'Memo' => Memo, 'Task' => Task, 'Link' => Link}
+    {'Memo' => Memo, 'Task' => Task, 'Link' => Link, 'Twit' => Twit}
   end
 
   def self.create(type)

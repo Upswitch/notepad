@@ -9,7 +9,7 @@ class Link < Post
 
   def read_from_console
     puts "Адрес ссылки:"
-    @url = STDIN.gets.chomp
+    @url = STDIN.gets.chomp.encode('UTF-8')
 
     puts "Что за ссылка?"
     @text = STDIN.gets.chomp
