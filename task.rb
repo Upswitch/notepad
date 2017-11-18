@@ -10,7 +10,7 @@ class Task < Post
 
   def read_from_console
     puts "Что надо сделать?"
-    @text = STDIN.gets.chomp.encode('UTF-8')
+    @text = STDIN.gets.chomp
 
     puts "К какому числу? Укажите дату в формате ДД.ММ.ГГГГ, например: 12.05.2003"
     input = STDIN.gets.chomp
